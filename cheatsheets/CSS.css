@@ -1,0 +1,960 @@
+An external CSS file
+
+
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css" title="style">
+        </head>
+
+Within the html header
+
+<head>
+<style type="text/css">
+ h1 {
+    color:red;
+    }
+</style>
+</head>
+
+Inline in the HTML
+
+<p style="color:red;">Some red text</p>
+
+/* example
+
+<div id="intro">
+        <p> This paragraph is in the intro section.</p>
+     </div>
+     <p> This paragraph is not in the intro section.</p>
+
+
+#intro {
+    color: white;
+    background-color: gray;
+}
+
+This paragraph is in the intro section.
+
+This paragraph is not in the intro section.
+
+Another Example
+
+<div>
+   <p class="first">This is a paragraph</p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section</p>
+<p> The second paragraph is not in the intro section. </p>
+
+.first {font-size: 200%;}
+
+
+Fill in the blanks to give yellow background color to the element with id="intro", and black text color to the class="mytext":
+
+ 
+#intro
+ 
+ {
+   background-color: yellow;
+}
+ 
+.mytext
+ 
+ {
+   color: black;
+}
+
+
+<div id="intro">
+   <p class="first">This is a <em> paragraph.</em></p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+
+#intro .first em {
+   color: pink; 
+   background-color:gray;
+}
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Floats</title>
+  <link rel="stylesheet" type="text/css" href="floats.css">
+</head>
+
+<body>
+
+  <header>
+    &lt;header&gt; #FFA500
+  </header>
+
+  <section id="left">
+    &lt;section&gt; #30948D
+  </section>
+
+  <section id="middle">
+    &lt;section&gt; #9E1212
+  </section>
+
+  <section id="right">
+    &lt;section&gt; #30948D
+  </section>
+
+  <section id="full">
+    <aside>
+      &lt;aside&gt; #a6b747
+    </aside>
+    &lt;section&gt; #394549
+    <div id="division">
+      &lt;div&gt; #6ea3da
+    </div>
+  </section>
+
+  <footer>
+    &lt;footer&gt; #FFA500
+  </footer>
+
+</body>
+
+</html>
+
+this goes with the HTML above.
+
+/**
+ * Float Layout Activity
+ **/
+
+ * {
+   box-sizing: border-box;
+   text-align: center;
+ }
+ 
+ body {
+   font-size: 24px;
+   line-height: 32px;
+   color: #333;
+ }
+ 
+ header {
+   padding: 20px;
+   margin-bottom: 20px;
+   color: #333;
+   background: #FFA500;
+ }
+ 
+ section {
+   padding: 20px;
+   margin-bottom: 20px;
+   background: #FFA500;
+ }
+ 
+ #left {
+   float: left;
+   width: 33.3%;
+   color: #fff;
+   background: #30948D;
+ }
+ 
+ #middle {
+   float: left;
+   width: 33.3%;
+   color: #fff;
+   background: #9E1212;
+ }
+ 
+ #right {
+   float: left;
+   width: 33.3%;
+   color: #fff;
+   background: #30948D;
+ }
+ 
+ #full {
+   width: 100%;
+   overflow: auto;
+   clear: both;
+   color: #fff;
+   background: #394549;
+ }
+ 
+ #division {
+   padding: 20px;
+   margin-top: 20px;
+   background: #214fb3;
+ }
+ 
+ aside {
+   float: left;
+   width: 33%;
+   height: 200px;
+   padding: 20px;
+   margin-left: 30px;
+   text-decoration-color: white;
+   background: #a6b747;
+   border: 1px solid #eee;
+ }
+ 
+ footer {
+   padding: 20px;
+   clear: both;
+   background: #FFA500;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+The HTML:
+<p class="serif">
+   This is a paragraph shown in serif font.
+</p>
+<p class="sansserif">
+   This is a paragraph shown in sans-serif font.
+</p> 
+<p class="monospace">
+   This is a paragraph shown in monospace font.
+</p> 
+<p class="cursive">
+   This is a paragraph shown in cursive font.
+</p> 
+<p class="fantasy">
+   This is a paragraph shown in fantasy font.
+</p> 
+
+
+p.serif {
+   font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+   font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+   font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+   font-family: Florence, cursive;
+}
+p.fantasy {
+   font-family: Blippo, fantasy;
+}
+
+FONT SIZE'
+
+The HTML:
+<p class="small">
+   Paragraph text set to be small
+</p>
+<p class="medium">
+   Paragraph text set to be medium
+</p>
+<p class="large">
+   Paragraph text set to be large
+</p>
+<p class="xlarge">
+   Paragraph text set to be very large
+</p>
+
+
+
+The CSS:
+p.small {
+   font-size: small;
+}
+p.medium {
+   font-size: medium;
+}
+p.large {
+   font-size: large;
+}
+p.xlarge {
+   font-size: x-large;
+}
+
+To calculate the em size, just use the following formula: em = pixels / 16
+For example:
+h1 {
+   font-size: 20px;
+}
+
+h1 {
+   font-size: 1.25em; 
+}
+
+The CSS:
+p.italic {
+   font-style: italic;
+}
+
+The HTML:
+<p class="normal">This paragraph is normal.</p>
+<p class="italic">This paragraph is italic.</p>
+<p class="oblique">This paragraph is oblique.</p>
+
+The CSS:
+
+p.normal {
+   font-style: normal;
+}
+p.italic {
+   font-style: italic;
+}
+p.oblique {
+   font-style: oblique;
+}
+
+The font-weight Property
+
+The HTML:
+<p class="light">This is a font with a "lighter" weight.</p>
+<p class="bold">This is a font with a "bold" weight.</p>
+<p class="bolder">This is a font with a "bolder" weight.</p>
+
+
+The CSS:
+p.light {   
+   font-weight: lighter;
+}
+p.bold {   
+   font-weight: bold;
+}
+p.bolder {
+   font-weight: bolder;
+}
+
+The font-weight Property
+
+You can also define the font weight with a number from 100 (thin) to 900 (thick), according to how thick you want the text to be.
+400 is the same as normal, and 700 is the same as bold.
+
+
+The HTML:
+<p class="light">This is a font with a "lighter" weight.</p>
+<p class="thick">This is a font with a "bold" weight.</p>
+<p class="thicker">This is a font with a "700" weight.</p>
+
+The CSS:
+p.light {
+   font-weight: lighter;
+}
+p.thick {
+   font-weight: bold;
+}
+p.thicker {
+   font-weight: 700;
+}
+
+The font-variant Property
+
+The CSS font-variant property allows you to convert your font to all small caps. The values can be set as normal, small-caps, and inherit.
+
+
+The HTML:
+<p class="normal">Paragraph font variant set to normal.</p>
+<p class="small">Paragraph font variant set to small-caps.</p>
+
+p.normal {
+   font-variant: normal;
+}
+p.small {
+   font-variant: small-caps;
+}
+
+
+The color Property
+
+The CSS color property specifies the color of the text.
+One method of specifying the color of the text is using a color name: like red, green, blue, etc.
+Here's an example of changing the color of your font.
+
+
+The HTML:
+<p class="example">The text inside the paragraph is green.</p>
+The text outside the paragraph is black (by default). 
+
+
+The CSS:
+p.example {
+   color: green;
+}
+
+
+
+The color Property
+
+Another way of defining colors is using hexadecimal values and RGB.
+Hexadecimal form is a pound sign (#) followed by at most, 6 hex values (0-F).
+RGB defines the individual values for Red, Green, and Blue.
+
+In the example below, we use hexadecimal value to set the heading color to blue, and RGB form to make the paragraph red.
+
+
+
+The HTML:
+<h1>This is a heading</h1>
+<p class="example">This is a paragraph</p>
+
+
+The CSS:
+h1 {
+   color: #0000FF;
+}
+p.example {
+   color: rgb(255,0,0);
+}
+
+
+
+Colours & Borders	
+
+color: red;	Element Colour - eg. red | #FF0000
+background-color: white;	Background Colour of element
+background-image: url(image.gif);	Background Colour of element
+border-color: yellow;	Border Colour of element
+border: 1px solid blue;	Width, style and colour of border defined together
+
+Text Styles	
+text-align: left;	Horizontal Alignment - left | center | right
+text-decoration: underline;	Text Decorations - eg. none | underline | line-through
+font-family: fontname;	Font Face (Typeface) - eg. Verdana, Arial, Helvetica
+font-size: 16pt;	Font Size or Height - eg. 12pt | 15px
+font-weight: bold;	Font Weight (Boldness) - eg. bold | normal | 200
+
+Size and Layout	
+width: 400px;	Width of HTML element - eg. 100px | 50%
+height: 100%;	Height of HTML element - eg. 20px | 100%
+margin: 5px;	Margin - space around an element, or distance between two elements
+margin-top: 1px;	Top Margin. Also try -bottom: -left: or -right:
+padding: 5px;	Padding - distance between an elements contents and its border
+padding-top: 1px;	Top Padding. Also try -bottom: -left: or -right:
+
+CSS Lists
+list-style: none;	Clear existing bullet types set by html list tags
+
+
+CSS CHEAT SHEET
+SYNTAX
+Syntax
+selector {property: value;}
+External Style Sheet
+<link rel="stylesheet" type="text/css" href="style.css" />
+Internal Style
+<style type="text/css">
+selector {property: value;}
+</style>
+Inline Style
+<tag style="property: value">
+
+GENERAL
+Class	String preceded by a period
+ID	String preceded by a hash mark
+div	Formats structure or block of text
+span	Inline formatting
+color	Foreground color
+cursor	Appearance of the cursor
+display	
+block; inline; list-item; none
+overflow	How content overflowing its box is handled
+visible, hidden, scroll, auto
+visibility	
+visible, hidden
+
+FONT
+font-style	
+Italic, normal
+font-variant	
+normal, small-caps
+font-weight	
+bold, normal, lighter, bolder, integer (100-900)
+font-size	Size of the font
+font-family	Specific font(s) to be used
+
+TEXT
+letter-spacing	Space between letters
+line-height	Vertical distance between baselines
+text-align	Horizontal alignment
+text-decoration	
+blink, line-through, none, overline, underline
+text-indent	First line indentation
+text-transform	
+capitalize, lowercase, uppercase
+vertical-align	Vertical alignment
+word-spacing	Spacing between words
+
+BOX MODEL
+CSS Box Model	height; width; margin-top; margin-right; margin-bottom; margin-left; padding-top; padding-right; padding-bottom; padding-left;
+
+BORDER
+border-width	Width of the border
+border-style	
+dashed; dotted; double; groove; inset; outset; ridge; solid; none
+border-color	Color of the border
+
+POSITION
+clear	Any floating elements around the element?
+both, left, right, none
+float	Floats to a specified side
+left, right, none
+left	The left position of an element
+auto, length values (pt, in, cm, px)
+top	The top position of an element
+auto, length values (pt, in, cm, px)
+position	
+static, relative, absolute
+z-index	Element above or below overlapping elements?
+auto, integer (higher numbers on top)
+
+BACKGROUND
+background-color	Background color
+background-image	Background image
+background-repeat	
+repeat, no-repeat, repeat-x, repeat-y
+background-attachment	Background image scroll with the element?
+scroll, fixed
+background-position	
+(x y), top, center, bottom, left, right
+
+LIST
+list-style-type	Type of bullet or numbering in the list
+disc; circle; square; decimal; lower-roman; upper-roman; lower-alpha; upper-alpha; none
+list-style-position	Position of the bullet or number in a list
+inside; outside
+list-style-image	Image to be used as the bullet in a list
+* The properties for each selector are in the order they should appear when using shorthand notation.
+Shorthand*
+background
+border
+border-bottom
+border-left
+border-right
+border-top
+font
+list-style
+margin
+padding
+
+Comments
+/* Comment */
+
+Pseudo Selectors
+:hover
+:active
+:focus
+:link
+:visited
+:first-line
+:first-letter
+
+Media Types
+all
+braille
+embossed
+handheld
+print
+projection
+screen
+speech
+tty
+tv
+
+Units
+Length %
+em
+pt
+px
+Keywords bolder
+lighter
+larger
+
+
+CSS 3, Media Queries Cheat Sheet
+Desktop - Tablet - Phone
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>test</title>
+    <style type="text/css">
+        h3 {text-align:center;}
+
+        /* PRINT VERSION */
+        @media print {
+            h3:after {content: ' - PRINT'; display: inline;}
+        }
+        /* PHONE VERSION */
+        @media only screen and (min-width: 320px) {
+            h3:after {content: ' - PHONE'; display: inline;}
+        }
+        /* TABLET VERSION */
+        @media only screen and (min-width: 768px) {
+            h3:after {content: ' - TABLET'; display: inline;}
+        }
+        /* DESKTOP VERSION */
+        @media only screen and (min-width: 980px) {
+            h3:after {content: ' - DESKTOP'; display: inline;}
+        }
+    </style>
+</head>
+<body>
+    <h3>TEST</h3>
+</body>
+</html>
+Desktop - Tablet - Phone With Orientation
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>test2</title>
+    <style type="text/css">
+        /* GLOBAL STYLES */
+        h3 {text-align:center;}
+
+        /* PRINT VERSION */
+        @media print {
+            h3:after {content: ' - PRINT'; display: inline;}
+        }
+
+        /* PHONE LANDSCAPE VERSION */
+        @media only screen and (min-width: 320px) and (orientation : landscape) {
+            h3:after {content: ' - PHONE LANDSCAPE'; display: inline;}
+        }
+        /* PHONE PORTRAIT VERSION */
+        @media only screen and (min-width: 320px) and (orientation : portrait) {
+            h3:after {content: ' - PHONE PORTRAIT'; display: inline;}
+        }
+
+        /* TABLET LANDSCAPE VERSION - not work, are the same as desktop */
+        @media only screen and (min-width: 768px) and (orientation : landscape) {
+            h3:after {content: ' - TABLET LANDSCAPE'; display: inline;}
+        }
+        /* TABLET PORTRAIT VERSION */
+        @media only screen and (min-width: 768px) and (orientation : portrait) {
+            h3:after {content: ' - TABLET PORTRAIT'; display: inline;}
+        }
+        /* DESKTOP VERSION */
+        @media only screen and (min-width: 980px) {
+            h3:after {content: ' - DESKTOP'; display: inline;}
+        }
+    </style>
+</head>
+<body>
+    <h3>TEST</h3>
+</body>
+</html>
+Tested on iPad2, iPhone3(4), HTC Evo 4g, Nokia C6
+
+Another way, founded at: http://www.studionashvegas.com/design/responsive-design-media-queries/
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Test without orientation</title>
+<style>
+h3:after {content: ' - DESKTOP AND TABLET LANDSCAPE VERSION'; display: inline;}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    h3:after {content: ' - TABLET PORTRAIT'; display: inline;}
+    h3 {color:red;}
+}
+
+@media only screen and (max-width: 767px) {
+    h3:after {content: ' - PHONE LANDSCAPE AND PORTRAIT VERSION'; display: inline;}
+}
+
+/* UNCOMMENT ME TO SPECIFY PHONE PORTRAIT VERSION
+@media only screen and (max-width: 479px) {
+    h3:after {content: ' - PHONE PORTAIT VERSION'; display: inline;}
+}
+*/
+</style>
+</head>
+<body>
+<h3>TEST</h3>
+</body>
+</html>
+
+
+
+
+CSS2 Cheat Sheet by DaveChild
+A quick reference guide for CSS, listing selector syntax, properties, units and other useful bits of information.
+ css      webdesign      web      design      frontend
+
+CSS2 Selectors
+*
+All elements
+div
+<di­v>
+div *
+All elements within <di­v>
+div span
+<sp­an> within <di­v>
+div, span
+<di­v> and <sp­an>
+div > span
+<sp­an> with parent <di­v>
+div + span
+<sp­an> preceded by <di­v>
+
+.class
+Elements of class "­cla­ss"
+div.class
+<di­v> of class "­cla­ss"
+
+
+#itemid
+Element with id "­ite­mid­"
+div#itemid
+<di­v> with id "­ite­mid­"
+
+
+a[attr]
+<a> with attribute "­att­r"
+a[attr­='x']
+<a> when "­att­r" is "­x"
+a[clas­s~='x']
+<a> when class is a list containing 'x'
+a[lang­|='en']
+<a> when lang begins "­en"
+
+
+CSS2 Pseudo Selectors and Pseudo Classes
+:first­-child
+First child element
+:first­-line
+First line of element
+:first­-letter
+First letter of element
+
+
+:hover
+Element with mouse over
+:active
+Active element
+:focus
+Element with focus
+:link
+Unvisited links
+:visited
+Visited links
+:lang(var)
+Element with language "­var­"
+:before
+Before element
+:after
+After element
+
+
+CSS2 Sizes
+0
+0 requires no unit
+Relative Sizes
+em
+1em equal to font size of parent (same as 100%)
+ex
+Height of lower case "­x"
+%
+Percentage
+Absolute Sizes
+px
+Pixels
+cm
+Centim­eters
+mm
+Millim­eters
+in
+Inches
+pt
+1pt = 1/72in
+pc
+1pc = 12pt
+
+
+CSS2 Colours
+#789abc
+RGB Hex Notation
+#acf
+Equates to "­#aa­ccf­f"
+rgb(0,­25,50)
+Value of each of red, green, and blue. 0 to 255, may be swapped for percen­tages.
+     
+
+
+CSS2 Box Model
+
+
+ 
+CSS2 Positi­oning
+display
+clear
+position
+z-index
+top
+direction
+right
+unicod­e-bidi
+bottom
+overflow
+left
+clip
+float
+visibility
+
+
+CSS2 Dimensions
+width
+min-height
+min-width
+max-height
+max-width
+vertic­al-­align
+height
+
+
+CSS2 Colour and Background
+color
+backgr­oun­d-r­epeat
+background
+backgr­oun­d-image
+backgr­oun­d-color
+backgr­oun­d-p­osition
+backgr­oun­d-a­tta­chment
+
+
+CSS2 Text
+text-i­ndent
+word-s­pacing
+text-align
+text-t­ran­sform
+text-d­eco­ration
+white-­space
+text-s­hadow
+line-h­eight
+letter­-sp­acing
+
+
+CSS2 Fonts
+font
+font-w­eight
+font-f­amily
+font-s­tretch
+font-style
+font-size
+font-v­ariant
+font-s­ize­-adjust
+     
+
+
+CSS2 Boxes
+margin
+border­-color
+margin-top
+border­-to­p-color
+margin­-right
+border­-ri­ght­-color
+margin­-bottom
+border­-bo­tto­m-color
+margin­-left
+border­-le­ft-­color
+padding
+border­-style
+paddin­g-top
+border­-to­p-style
+paddin­g-right
+border­-ri­ght­-style
+paddin­g-b­ottom
+border­-bo­tto­m-style
+paddin­g-left
+border­-le­ft-­style
+border
+border­-width
+border-top
+border­-to­p-width
+border­-bottom
+border­-ri­ght­-width
+border­-right
+border­-bo­tto­m-width
+border­-left
+border­-le­ft-­width
+
+
+CSS2 Tables
+captio­n-side
+border­-sp­acing
+table-­layout
+empty-­cells
+border­-co­llapse
+speak-­header
+
+
+CSS2 Paging
+size
+page-b­rea­k-i­nside
+marks
+page
+page-b­rea­k-b­efore
+orphans
+page-b­rea­k-after
+widows
+
+
+CSS2 Interface
+cursor
+outlin­e-style
+outline
+outlin­e-color
+outlin­e-width
+
+
+CSS2 Aural
+volume
+elevation
+speak
+speech­-rate
+pause
+voice-­family
+pause-­before
+pitch
+pause-­after
+pitch-­range
+cue
+stress
+cue-before
+richness
+cue-after
+speak-­pun­ctu­ation
+play-d­uring
+speak-­numeral
+azimuth
+
+
+CSS2 Miscel­laneous
+content
+list-s­tyl­e-type
+quotes
+list-s­tyl­e-image
+counte­r-reset
+list-s­tyl­e-p­osition
+counte­r-i­ncr­ement
+marker­-offset
+list-style

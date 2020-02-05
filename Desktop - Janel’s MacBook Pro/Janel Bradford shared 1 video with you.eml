@@ -1,0 +1,157 @@
+X-Apparently-To: bradfordjanel@yahoo.com; Wed, 06 Nov 2019 04:08:56 +0000
+Return-Path: <3T0fCXSgKANoJKNALHU-WfXXb8YbXb9cdBeB8Z8A6BfW9W6XX6ZbCKKCHA.8KI@photos.bounces.google.com>
+Authentication-Results: mta4476.mail.ne1.yahoo.com; 
+ dkim=pass (ok) header.i=@google.com header.s=20161025;
+ spf=pass smtp.mailfrom=@photos.bounces.google.com;
+ dmarc=pass(p=reject sp=NULL dis=none) header.from=google.com;
+Received-SPF: pass (domain of photos.bounces.google.com designates 209.85.210.198 as permitted sender)
+X-YMailISG: kJtJjSwWLDthJRvGjNfpFBDpCrz071vKpvhsARBDtNUNpbXi
+ T06M7Rf64UfaPczx5aHvoH_OmYpyB2VAuKxNYFQcFESBWyic4xKNrpRTbsqZ
+ dapp9lbw6fLg__vQZMrjJP.CZ4RMQOdgGenAYJHbggyLH7ryEHoewoWGWLVU
+ Uz_yDmSLZZ0VgJ25Qsk12yHFitumOz3v7TLbzAv93SkhoikVE4LpRWzohdx1
+ .BLyu8TY9jmlpC1YR_1z9us6XgZfQ1bjjcQAMWjsU_3OxJFunG5hDepZT.Me
+ 5HEPP0VNHrXaf41Nh639ofYTJWNtVRG7LBsQPhSMIlF3ZdCtU2X7krAnR9_u
+ gppRrtzy4EgQw5xZd8fJL6ZyqAw_EspaPVMCgiqxBsDmX9SWW_UscP0elpFs
+ 69qNMX1qGOjGaQSQ3X2UELucZ734FoyspoQfcHgYCHWa1fW42wj8YzKNXRYn
+ aioaSAEEugB7zehGkHSxTV_Z7EF89.vn90qUjojZrlnISkdJgvFTelc3XgTQ
+ dVNb_DzHsqyAp.6I8jMVw8nW.b_Pm29DdDT5dkL1lZwi4pQVT8R4Cvfx0GaG
+ jeJKkg287MZ9EN8cSUMC.J4A0uZnzeQvbhJbI8xAptkQWTEeD3Ux6RuglcLn
+ X5K7jTd8p9Itq425JUFkxxKlVB_x_DPOdtF_FMfqm4CtdU1ursEvyyTSI9V4
+ B0S7PIubm8G_Zo7FHiSMvTuAyecG_TcbGPI4bOv0KGso_vJQerJE0VcvrLmO
+ PmMLdG2STU_uJpePP1nUaTYzhERpxhskPvqqLWBsIgmkYoD22ExDG4cOoYRf
+ 9.2Yn3QIwWBmU5ETbOiVtI3inaL9lZnS1s3_W915b8OdAJ4WH73HFN2FOJua
+ Ah4ZlQ8ugxSEO0KHKIpDMt8tfcSFSZePKdkVwTzFtm9LgwBGK.h1CetuojXN
+ _xwNbT8RhKUL_CDQxXvMf0btO15wzNajqp0TdaIqo6ftcuYSt8CeU5vc6hIN
+ jTET5K.lu4GkEn5PIzW_fe1ssZjrSh6v6_lQGSxck95tRUn76dTs3zeqSagp
+ SXpz6motwXsZbjnXA8dmIEl2DfF1G.fJoxFWH6igN5UVIO5SWWi02q8bexim
+ fDgaJCgYae_GnCwZXQ3fYghtKPRveiDQTRznvWw3GJ2MqmtR6VmBp0KzaaGh
+ fH9GMal9_wycm819Y5iZFxiAfotiem8TyO8Gg_IGqop.HUNrBb2Me.AVcAtp
+ mF1lY1gSEvjcCxu23_N7zjCTUuB71PmfBVV554v8DNMuN27bU3xLpk8ZsZ0c
+ 62JddOmeGzYrvMDzGCsO3rOx8WO.wDDNu5Xuo.xPTUmrizkXhWvjMFHYqoWy
+ 4UAjl2B9HC_Xnx_sNkZG9SR73uynt10Zi17oDzlugeXP1d_BhBSvP42iH9RV
+ fbXG0TPy
+X-Originating-IP: [209.85.210.198]
+Received: from 10.217.150.140  (EHLO mail-pf1-f198.google.com) (209.85.210.198)
+  by mta4476.mail.ne1.yahoo.com with SMTPS; Wed, 06 Nov 2019 04:08:55 +0000
+Received: by mail-pf1-f198.google.com with SMTP id m185so17952470pfb.11
+        for <bradfordjanel@yahoo.com>; Tue, 05 Nov 2019 20:08:55 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:list-unsubscribe:message-id:subject:from
+         :to;
+        bh=d+ezrK7USkEqIWjH6ZFnOqg/zppJ1E6Ic5IgJODR+I0=;
+        b=X3daxGdiRah8bGydp0b5J6aNuPb39u9Hs+OYMWZbfeVRb51/Rq+wMKbuvJKys94TFA
+         dfaEsBXwvq293MnUzlei59VrSCbPy7Kn5hcQGRa/v0sOwLUTc4pylfbw+rEk4wUXFCpB
+         7JS9ejnjl9QYh2iekp4uCpQmYnGG36b9/pcM8NtGBNUPqXpn6YOFkV3UtN9k71M5RLrN
+         wdgjpzb+eOf7Qj1jQyQ8kwjpuWH9XkW37hLQzE/XbbJX9Gl7xWMlFezyquSOo8MK2dfm
+         tgeCUhhGCM26kMCaD1jMCBwstY1EAfAW/vWy9iOc1HFHhaLVxRXOMnfo0MToiwSIV07f
+         NNew==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:list-unsubscribe
+         :message-id:subject:from:to;
+        bh=d+ezrK7USkEqIWjH6ZFnOqg/zppJ1E6Ic5IgJODR+I0=;
+        b=iMOpshydK2wfxacSMfRE44dw2cutch2U6HlkA/q2A7gyUeg+Up+Jj/eHm+8qSPwT0T
+         4VOVdCPzmNRrcrXJQhcdBPlNHWU6AtKykQFMC5jKb+UjJOMn2/AyUbjzwbRJyKsPvR1J
+         irf6zqWQcKSINd/xwqtBk2Bdcl7F7WiKJxZz89OavAyJ4aejKmvu3riXucR6nMavNNLD
+         VQzZayep/Ju22YqMCbpKsTqEwhoQgAEBzUa7dPkpyPvItKLUBVWClUUXs8It45U6UC/3
+         HUqXs2cjitHVDgFfJRdMa9Ao7ulKArXOJS5EC4NLEvjvfGCL4HO5VNBdNdNzvK5uIukW
+         m/EQ==
+X-Gm-Message-State: APjAAAWGofJ9UimEE/P+azRcQgdTtEcBvYhtyajISL2dYpeLb75ehCEd
+	+fHd7syLeEuZ1/NvOAlk
+X-Google-Smtp-Source: APXvYqxwT+WZFJa+6IikRY0KPYlXkLxHnSkpRyS88FBSAYn/ZdkNC+6MxhgUJn0i8SKcsBU+Fsk=
+MIME-Version: 1.0
+X-Received: by 2002:aa7:8dd9:: with SMTP id j25mr710918pfr.94.1573013327917;
+ Tue, 05 Nov 2019 20:08:47 -0800 (PST)
+Date: Tue, 05 Nov 2019 20:08:47 -0800
+Reply-To: Janel Bradford <janelbradford@gmail.com>
+List-Unsubscribe: <https://notifications.google.com/unsubscribe/AJ7SsMl5pLJAfQ_nBBxKC1Q5VN3rMO6vwhmNf5EecUz0jTVLlED_y4icvWxdQdtMolECeYfcH2qZ64mxeKoIZkxQJLtmtOTbOqro8T-yxcAFfq3we-9gFNjBOW41MIS0ZuJFHyHrZFVC44YJaYeNssLQSYazmfsfFQ>
+X-Notifications: ENVELOPE_RECEIVED_EMAIL|19a94dd463d59cb3
+Message-ID: <YQJJyNShS1eSCEms57BC_g.0@notifications.google.com>
+Subject: Janel Bradford shared 1 video with you
+From: "Janel Bradford (via Google Photos)" <noreply-09115c2515d67f8fc3ceaf90d0a11a35@google.com>
+To: bradfordjanel@yahoo.com
+Content-Type: multipart/alternative; boundary="000000000000a334e90596a5b408"
+Content-Length: 5234
+
+--000000000000a334e90596a5b408
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Google Photos
+
+Janel Bradford shared a video with you
+
+View videos here:  
+https://photos.google.com/share/AF1QipPoOc-EoLFlIjbmr9LMRea9D3Qw-UvneuPkUwx15SMERm6kx_XrQh_Arsxzymchag?key=MVhRc1JVUU1TMjNYV2RDc2NZZDR6WDFQSWJOUVVR
+
+You received this mail because Janel Bradford shared these photos with you.  
+If you no longer wish to receive email notifications of shared photos,  
+unsubscribe here:  
+https://notifications.google.com/unsubscribe/AJ7SsMl5pLJAfQ_nBBxKC1Q5VN3rMO6vwhmNf5EecUz0jTVLlED_y4icvWxdQdtMolECeYfcH2qZ64mxeKoIZkxQJLtmtOTbOqro8T-yxcAFfq3we-9gFNjBOW41MIS0ZuJFHyHrZFVC44YJaYeNssLQSYazmfsfFQ
+
+Get Google Photos (https://google.com/photos)
+
+Google LLC, 1600 Amphitheatre Pkwy, Mountain View, CA 94043 USA
+
+
+--000000000000a334e90596a5b408
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html dir=3D"LTR"><body style=3D"margin: 0; padding: 0; text-align:center;"=
+><table cellspacing=3D"0" cellpadding=3D"0" style=3D"max-width: 460px; marg=
+in: 0 auto; table-layout: fixed; text-align: center"><tr><td><table cellspa=
+cing=3D"0" cellpadding=3D"0" style=3D"max-width: 420px; margin: 0 auto; tab=
+le-layout: fixed; text-align: center"><tbody><tr><td style=3D"padding: 32px=
+ 0;"><img src=3D"https://ssl.gstatic.com/social/photosui/images/email/googl=
+e_photos_pinwheel.png" height=3D"32" title=3D"Google Photos Logo" style=3D"=
+vertical-align: middle;"></td></tr><tr><td><table cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border: 1px solid #e0e0e0; border-radius: 8px; padding:=
+24px;"><tbody><tr style=3D"text-align: center;"><td style=3D"display: inlin=
+e-grid; padding-bottom: 16px;"><img src=3D"https://lh3.googleusercontent.co=
+m/a/AGF-l78INlfkmhFpw3DICmJra0ja4bxXhQmR-mU6MHodWw=3Ds80-cc" height=3D"60" =
+width=3D"60" style=3D"border-radius: 50%;"></td></tr><tr><td style=3D"font-=
+family: arial, sans-serif; text-align: center;"><span style=3D"color: #2121=
+21; font-size: 14px; line-height: 20px;"><span style=3D"font-weight: bold;"=
+>Janel Bradford</span> shared a video with you&nbsp;</span></td></tr><tr><t=
+d colspan=3D"2" style=3D"padding-top: 16px;"><a style=3D"text-decoration: n=
+one;" href=3D"https://photos.google.com/share/AF1QipPoOc-EoLFlIjbmr9LMRea9D=
+3Qw-UvneuPkUwx15SMERm6kx_XrQh_Arsxzymchag?key=3DMVhRc1JVUU1TMjNYV2RDc2NZZDR=
+6WDFQSWJOUVVR"><table cellspacing=3D"4" cellpadding=3D"0" style=3D"table-la=
+yout: fixed; width: 100%; text-align: center; margin: 0;"><tbody><tr><td><i=
+mg src=3D"https://lh3.googleusercontent.com/p/AF1QipM01HKPj655zhPjxEkzqUV2r=
+H5Cqy3bL0FElXTk=3Ds512-p-qv=3Dp04nh751799e804t84m8b9o1ghn8sbquh,m=3D86fe842=
+40fb7ad870ecb4a5e966a2677,x=3D,t=3D25-iv267?key=3DMVhRc1JVUU1TMjNYV2RDc2NZZ=
+DR6WDFQSWJOUVVR" style=3D"display: block; width: 100%;"></td></tr></tbody><=
+/table></a></td></tr><tr style=3D"font-family: arial, sans-serif; font-size=
+: 14px; font-weight: bold; text-align: center;"><td style=3D"display: inlin=
+e-grid; padding-top: 24px;"><a style=3D"color: #fff; text-decoration: none;=
+ background-color: #1a73e8; padding: 11px 16px; border-radius: 4px;" href=
+=3D"https://photos.google.com/share/AF1QipPoOc-EoLFlIjbmr9LMRea9D3Qw-UvneuP=
+kUwx15SMERm6kx_XrQh_Arsxzymchag?key=3DMVhRc1JVUU1TMjNYV2RDc2NZZDR6WDFQSWJOU=
+VVR">View video</a></td></tr></tbody></table></td></tr></tbody></table><div=
+ style=3D"color: #757575; font-family: arial, sans-serif; font-size: 12px; =
+line-height: 18px; margin-top: 40px;">You received this mail because Janel =
+Bradford shared these photos with you. If you no longer wish to receive ema=
+il notifications of shared photos, <a href=3D"https://notifications.google.=
+com/unsubscribe/AJ7SsMl5pLJAfQ_nBBxKC1Q5VN3rMO6vwhmNf5EecUz0jTVLlED_y4icvWx=
+dQdtMolECeYfcH2qZ64mxeKoIZkxQJLtmtOTbOqro8T-yxcAFfq3we-9gFNjBOW41MIS0ZuJFHy=
+HrZFVC44YJaYeNssLQSYazmfsfFQ" style=3D"color:#757575; text-decoration:under=
+line;">unsubscribe here</a>.</div><div style=3D"color: #757575; font-family=
+: arial, sans-serif; font-size: 14px; line-height: 18px; margin: 24px 0 6px=
+ 0;">Get the Google Photos app</div><table cellspacing=3D"10" cellpadding=
+=3D"0" style=3D"margin: 0 auto; table-layout: fixed; text-align: center;"><=
+tr><td><a href=3D"https://play.google.com/store/apps/details?id=3Dcom.googl=
+e.android.apps.photos&referrer=3Dutm_source%3Ddsharing%26utm_medium%3Demail=
+"><img src=3D"https://ssl.gstatic.com/social/photosui/images/email/google_p=
+lay_badge.png" height=3D"40" width=3D"135" title=3D"Google Play store" styl=
+e=3D"vertical-align: middle;"></a></td><td><a href=3D"https://itunes.apple.=
+com/app/apple-store/id962194608?pt=3D9008&ct=3Dds-email&mt=3D8"><img src=3D=
+"https://ssl.gstatic.com/social/photosui/images/email/appstore_badge.png" h=
+eight=3D"40" width=3D"135" title=3D"App store" style=3D"vertical-align: mid=
+dle;"></a></td></tr></table><hr style=3D"margin: 14px 0 32px 0; border: non=
+e; border-top: 1px solid #e0e0e0;"><div style=3D"color: #757575; font-famil=
+y: arial, sans-serif; font-size: 10px; line-height: 14px; margin-bottom: 32=
+px;">Google LLC<br>1600 Amphitheatre Pkwy<br>Mountain View, CA 94043 USA</d=
+iv></td></tr></table></body></html>
+--000000000000a334e90596a5b408--

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Jiggle Into JavaScript</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.5">
+  <style type="text/css">
+    p.p1 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px 'Andale Mono';
+      color: #878787;
+      -webkit-text-stroke: #878787;
+      background-color: #f6f6f6
+    }
+
+    p.p2 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px 'Andale Mono';
+      color: #00006d;
+      -webkit-text-stroke: #00006d;
+      background-color: #f6f6f6
+    }
+
+    p.p3 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px 'Andale Mono';
+      color: #262626;
+      -webkit-text-stroke: #262626;
+      background-color: #f6f6f6
+    }
+
+    p.p4 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px 'Andale Mono';
+      color: #262626;
+      -webkit-text-stroke: #262626;
+      background-color: #f6f6f6;
+      min-height: 14.0px
+    }
+
+    p.p5 {
+      margin: 0.0px 0.0px 0.0px 0.0px;
+      font: 12.0px 'Andale Mono';
+      color: #d20035;
+      -webkit-text-stroke: #d20035;
+      background-color: #f6f6f6
+    }
+
+    span.s1 {
+      font-kerning: none
+    }
+
+    span.s2 {
+      font-kerning: none;
+      color: #00006d;
+      -webkit-text-stroke: 0px #00006d
+    }
+
+    span.s3 {
+      font-kerning: none;
+      color: #262626;
+      -webkit-text-stroke: 0px #262626
+    }
+
+    span.s4 {
+      font-kerning: none;
+      color: #0e6e6d;
+      -webkit-text-stroke: 0px #0e6e6d
+    }
+
+    span.s5 {
+      font-kerning: none;
+      color: #d20035;
+      -webkit-text-stroke: 0px #d20035
+    }
+
+    span.s6 {
+      font-kerning: none;
+      color: #0e72a4;
+      -webkit-text-stroke: 0px #0e72a4
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+  <p class="p2"><span class="s1">&lt;html&gt;</span></p>
+  <p class="p2"><span class="s1">&lt;head&gt;</span></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span
+      class="s2">&lt;title&gt;</span><span class="s1">Jiggle Into JavaScript</span><span
+      class="s2">&lt;/title&gt;</span></p>
+  <p class="p2"><span class="s1">&lt;/head&gt;</span></p>
+  <p class="p2"><span class="s1">&lt;body&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span
+      class="s2">&lt;p&gt;</span><span class="s1">Press the buttons to move the box!</span><span
+      class="s2">&lt;/p&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;div
+    </span><span class="s4">id</span><span class="s2">=</span><span class="s1">"box"</span><span class="s2">
+    </span><span class="s4">style</span><span class="s2">=</span><span class="s1">"height:150px; width:150px;
+      background-color:orange; margin:25px"</span><span class="s2">&gt;&lt;/div&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;button
+    </span><span class="s4">id</span><span class="s1">=</span><span class="s5">"shrinkBtn"</span><span
+      class="s1">&gt;</span><span class="s3">Shrink</span><span class="s1">&lt;/button&gt;</span></p>
+  <p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;button
+    </span><span class="s4">id</span><span class="s1">=</span><span class="s5">"growBtn"</span><span
+      class="s1">&gt;</span><span class="s3">Grow</span><span class="s1">&lt;/button&gt;</span></p>
+  <p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;button
+    </span><span class="s4">id</span><span class="s1">=</span><span class="s5">"resetBtn"</span><span
+      class="s1">&gt;</span><span class="s3">Reset</span><span class="s1">&lt;/button&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;script
+    </span><span class="s4">type</span><span class="s2">=</span><span class="s1">"text/javascript"</span><span
+      class="s2">&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"shrinkBtn"</span><span
+      class="s1">).addEventListener(</span><span class="s5">"click"</span><span class="s1">, function(){</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"box"</span><span
+      class="s1">).style.height = </span><span class="s5">"25px"</span><span class="s1">;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"growBtn"</span><span
+      class="s1">).addEventListener(</span><span class="s5">"click"</span><span class="s1">, function(){</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"box"</span><span
+      class="s1">).style.height = </span><span class="s5">"250px"</span><span class="s1">;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"resetBtn"</span><span
+      class="s1">).addEventListener(</span><span class="s5">"click"</span><span class="s1">, function(){</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">            </span></span><span
+      class="s6">document</span><span class="s1">.getElementById(</span><span class="s5">"box"</span><span
+      class="s1">).style.height = </span><span class="s5">"150px"</span><span class="s1">;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p2"><span class="s3"><span class="Apple-converted-space">    </span></span><span
+      class="s1">&lt;/script&gt;</span></p>
+  <p class="p4"><span class="s1"></span><br></p>
+  <p class="p2"><span class="s1">&lt;/body&gt;</span></p>
+  <p class="p2"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+
+</html>

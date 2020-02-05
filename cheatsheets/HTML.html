@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web Tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JAVASCRIPT">
+    <meta name="author" content="John Doe">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .background {
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Headings -->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <hr>
+
+    <!-- Paragraphs -->
+
+    <div>
+        <p title="This is a tooltip"> This is a paragragh <br>
+            <p>Lorem<ins> ipsum dolor sit,</ins> <strong> amet </strong>strongconsectetur adipisicing elit. Id iusto,
+                vero
+                pariatur
+                laboriosam consequatur quos!
+                Facere, <delete>praesentium </delete> ex reprehenderit veritatis atque inventore molestiae. Consectetur
+                eaque
+                tempore unde nostrum
+                minima voluptatibus?
+                Lorem ipsum dolor sit, amet <em>consectetur </em> adipisicing elit. Id iusto, vero pariatur laboriosam
+                consequatur quos!
+                Facere, praesentium <span style="color:blue"> ex reprehenderit veritatis atque inventore molestiae.
+                    Consectetur eaque tempore
+                    unde
+                    Facere, praesentium <span> ex reprehenderit veritatis atque inventore molestiae. Consectetur eaque
+                        tempore unde
+                        nostrum
+                        minima voluptatibus?
+                        Lorem ipsum dolor sit, amet consectetur <mark> adipisicing </mark> lit. Id iusto, vero pariatur
+                        laboriosam
+                        consequatur quos!
+                        Facere, <small>praesentium</small> ex reprehenderit veritatis atque inventore molestiae.
+                        Consectetur
+                        eaque
+                        tempore unde nostrum
+                        minima voluptatibus?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iusto, vero pariatur laboriosam
+                consequatur
+                quos!
+                Facere, praesentium ex reprehenderit veritatis atque inventore molestiae. Consectetur eaque
+                tempore
+                unde
+                nostrum
+                minima voluptatibus?
+                Lorem ipsum <sub>dolor</sub> sit, amet consectetur adipisicing elit. Id iusto, vero pariatur
+                laboriosam
+                consequatur quos!
+                Facere, praesentium ex reprehenderit veritatis atque inventore molestiae. Consectetur eaque
+                tempore
+                unde
+                nostrum
+                minima voluptatibus?</p>
+            <p class="background"> Lorem ipsum <sup>dolor</sup> sit, amet consectetur adipisicing elit. Id iusto, vero
+                pariatur
+                laboriosam
+                consequatur quos!
+                Facere, praesentium ex reprehenderit veritatis atque inventore molestiae. Consectetur eaque
+                tempore
+                unde
+                nostrum
+                minima voluptatibus?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id iusto, vero
+                pariatur laboriosam
+                consequatur
+                quos!
+                Facere, praesentium ex reprehenderit veritatis atque inventore molestiae. Consectetur eaque
+                tempore
+                unde
+                nostrum
+                minima voluptatibus?</p>
+    </div>
+
+    <!-- Image and Bookmark -->
+
+    <img src="banner.png" alt="alternate description here" width=400>
+
+    <br>
+
+    <p id="bookmark">this is a paragraph</p>
+
+    <!-- List Examples  -->
+
+    <ul type="1" starts="25">
+        <li>List Item 1</li>
+    </ul>
+
+    <li>sub list 1
+    <li>sub list 2
+
+
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+    <li>List Item 6</li>
+    </ul>
+
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ol>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Table Examples -->
+
+    <table>
+        <caption>This is a caption</caption>
+        <thead>
+            <trow>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </trow>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>35</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Jill Smith</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone
+            <td>555-666-7777</td>
+            </th>
+        </tr>
+        <tr>
+            <td>777-777-7777</td>
+        </tr>
+    </table>
+
+    <!-- Form Examples -->
+
+    <form action="server.php"></form>
+    <fieldset>
+        <legend>Personal information:</legend>
+        First Name:<br>
+        <input type="text" name="firstname" value="" placeholder="First Name Here"><br>
+        Last Name:<br>
+        <input type="text" name="lastname" value="" placeholder="Last Name Here"><br><br>
+        <input type="radio" name="options"> Option 1
+        <input type="radio" name="options"> Option 2 <br>
+        <input type="checkbox" name="checkboxes" checked> Checkbox 1
+        <input type="checkbox" name="checkboxes"> Checkbox 2
+        <input type="checkbox" name="checkboxes"> Checkbox 3 <br>
+
+        <label for="carSelect">Select:</label>
+
+        <select name="cars" id="carSelect" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+        </select>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+    <button>Click Me</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!-- Bookmarked Paragraph  -->
+
+    <p id="bookmark">This is a paragraph</p>
+
+</body>
+
+</html>
